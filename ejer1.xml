@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paises>
+    <pais>
+        <nombre>Espania</nombre>
+        <poblacion>20000</poblacion>
+        <capital>Madrid</capital>
+        <supericie>500000 km</supericie>
+    </pais>
+
+    <pais>
+        <nombre>Alemania</nombre>
+        <poblacion>64000</poblacion>
+        <capital>Berlin</capital>
+        <superficie>3928398 km</superficie>
+    </pais>
+
+    <pais>
+        <nombre>Alemania</nombre>
+        <poblacion>64000</poblacion>
+        <capital>Berlin</capital>
+        <superficie>938490343 km</superficie>
+    </pais>
+
+    <pais>
+        <nombre>Hungria</nombre>
+        <poblacion>38949</poblacion>
+        <capital>Budapest</capital>
+        <superficie>34543 km</superficie>
+    </pais>
+</paises>

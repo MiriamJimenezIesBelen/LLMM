@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libro titulo="1984" año="1949" genero="Ficción" idioma="Inglés">
+        <autores>
+            <autor>George Orwell</autor>
+        </autores>
+        <sinopsis>Una distopía que describe una sociedad totalitaria bajo la vigilancia constante del Gran Hermano.</sinopsis>
+        <comentarios>
+            <comentario>Un libro que sigue siendo relevante hoy en día.</comentario>
+            <comentario>Una crítica profunda al totalitarismo.</comentario>
+        </comentarios>
+    </libro>
+
+    <libro titulo="El nombre de la rosa" año="1980" genero="Misterio" idioma="Italiano">
+        <autores>
+            <autor>Umberto Eco</autor>
+        </autores>
+        <sinopsis>En una abadía benedictina del siglo XIV, se suceden una serie de crímenes que son investigados por un monje franciscano.</sinopsis>
+        <comentarios>
+            <comentario>Una obra maestra del género histórico y de misterio.</comentario>
+            <comentario>Un libro denso, pero extraordinario.</comentario>
+        </comentarios>
+    </libro>
+
+    <libro titulo="El señor de los anillos" año="1954" genero="Fantasía" idioma="Inglés">
+        <autores>
+            <autor>J.R.R. Tolkien</autor>
+            <autor>C.S. Lewis</autor>
+        </autores>
+        <sinopsis>Una épica historia de la lucha entre el bien y el mal en la Tierra Media, donde un grupo de héroes busca destruir el Anillo Único.</sinopsis>
+        <comentarios>
+            <comentario>Una de las mejores obras de fantasía jamás escritas.</comentario>
+            <comentario>Un mundo imaginario increíblemente detallado y profundo.</comentario>
+        </comentarios>
+    </libro>
+</biblioteca>
