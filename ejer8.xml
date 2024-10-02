@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<agenda>
+    <persona sexo="mujer">
+        <nombre>Paula</nombre>
+        <apellidos>Martinez Sanchez</apellidos>
+        <ciudad>Malaga</ciudad>
+        <telefonos>
+            <telefono>723782392</telefono>
+            <telefono>983748937</telefono>
+        </telefonos>
+    </persona>
+</agenda>
