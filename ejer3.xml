@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<perro>
+    <raza>
+        <nombre>Perro de aguas español</nombre>
+        <abreviatura>PAE</abreviatura>
+        <origen>Andalucía</origen>
+        <tamanio>
+            <macho>44 a 50 cm</macho>
+            <hembra>40 a 46 cm</hembra>
+        </tamanio>
+        <peso>
+            <macho>19 a 22 kg</macho>
+            <hembra>14 a 19 kg</hembra>
+        </peso>
+        <comida>pienso</comida>
+        <pelaje>duro</pelaje>
+        <colores>marron,negro,blanco</colores>
+    </raza>
+
+    <raza>
+        <nombre>Pastor Aleman</nombre>
+        <abreviatura>PA</abreviatura>
+        <origen>Alemania</origen>
+        <tamanio>
+            <macho>50 a 58 cm</macho>
+            <hembra>40 a 46 cm</hembra>
+        </tamanio>
+        <peso>
+            <macho>23 a 30 kg</macho>
+            <hembra>20 a 26 kg</hembra>
+        </peso>
+        <comida>pienso</comida>
+        <pelaje>duro</pelaje>
+        <colores>marron,negro</colores>
+    </raza>
+
+    <raza>
+        <nombre>Rottweiler</nombre>
+        <abreviatura>ro</abreviatura>
+        <origen>Francia</origen>
+        <tamanio>
+            <macho>50 a 53 cm</macho>
+            <hembra>44 a 46 cm</hembra>
+        </tamanio>
+        <peso>
+            <macho>19 a 22 kg</macho>
+            <hembra>14 a 19 kg</hembra>
+        </peso>
+        <comida>pienso</comida>
+        <pelaje>duro</pelaje>
+        <colores>negro,marron</colores>
+    </raza>
+</perro>
