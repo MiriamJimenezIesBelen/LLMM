@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<pedido>
-    <destinatario> Jose Antonio Lojo</destinatario>
-    <articulo> bicicleta A2020</articulo>
-    <direccion>Calle BArci 4,tercer piso, letra A</direccion>
+<pedido codigo="1111">
+    <destinatario> 
+        <nombre>Jose Antonio</nombre>
+        <apellidos> Lojo</apellidos> 
+    </destinatario>
+    <articulos> 
+        <articulo>bicicleta A2020</articulo>
+        <articulo>ordenador modelo 1345</articulo>
+    </articulos>
+    <direccion>
+        <calle>Calle BArci 4, tercer piso, letra A</calle>
+        <provincia>Malaga</provincia>
+        <codigo_postal>29004</codigo_postal>
+    </direccion>
     <fecha> 20-09-2019</fecha>
-    <atributo>1111</atributo>
 </pedido>
