@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehiculos >
+    <coch:coche xmlns:coch="https://iesbelen.org/xml/coches">
+        <coch:marca>Toyota</coch:marca>
+        <coch:modelo>Corolla</coch:modelo>
+        <coch:potencia>150 HP</coch:potencia>
+    </coch:coche>
+
+    <mot:moto xmlns:mot="https://iesbelen.org/xml/motos">
+        <mot:marca>Honda</mot:marca>
+        <mot:modelo>CBR 600</mot:modelo>
+        <mot:cilindrada>600 cc</mot:cilindrada>
+        <mot:aceleracion>0-60 mph en 3.2 segundos</mot:aceleracion>
+    </mot:moto>
+</vehiculos>
