@@ -1,0 +1,20 @@
+
+body{
+    font-family: verdana;
+    font-size: 12px;
+    color:darkblue;
+    background-image: url('imagen.jfif');
+}
+
+h1{
+    font-family: Georgia;
+    font-size: 36px;
+    font-weight: bold;
+    color:darkred;
+
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
