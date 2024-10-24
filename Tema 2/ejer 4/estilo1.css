@@ -48,7 +48,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    color:aliceblue;
+    text-decoration: underline;
 }
 
 /* Estilos para los enlaces */
