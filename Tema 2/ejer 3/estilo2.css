@@ -12,6 +12,8 @@ h1{
     font-size: 36px;
     font-weight: bold;
     color:darkblue;
+    border-top: solid darkblue;
+    border-bottom: solid darkblue;
     text-align: center;
     background-color: white;
     margin: 20px auto;
@@ -26,7 +28,7 @@ h2{
     font-family: 'Times New Roman';
     font-size: 14px;
     font-weight: bold;
-    color:red;
+    color:darkred;
 }
 
 .verde{
@@ -34,4 +36,31 @@ h2{
     font-size: 14px;
     font-weight: bold;
     color:green;
+}
+
+#datos_personales{
+    font-size: 14px;;
+    color:#74030A;
+    background-color: lightcoral;
+    font-family: Arial,Times, serif;
+    border: solid 3px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+    padding: 15px;
+    margin: 20px auto auto;
+    width: 50%;
+}
+
+#formacion{
+    font-size: 14px;;
+    color:darkblue;
+    background-color: lightskyblue;
+    font-family: Arial,Times, serif;
+    border:  3px dotted;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+    padding: 15px;
+    margin: 20px auto auto;
+    width: 50%;
+
 }
