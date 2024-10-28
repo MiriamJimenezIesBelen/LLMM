@@ -35,10 +35,6 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
 
 nav ul li a {
     
@@ -59,4 +55,14 @@ a:link, a:visited {
 
 a:hover {
     color: yellow;
+}
+
+/* Para poner los circulos como imagenes*/
+
+nav ul li {
+    list-style: none;
+    background: url('assets/css/secundaria.png') no-repeat left center;
+    padding-left: 30px; /* Ajusta según el tamaño de la imagen */
+    background-size: 20px; /* Ajusta el tamaño de la imagen */
+    margin-bottom: 10px;
 }
