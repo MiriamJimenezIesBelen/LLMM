@@ -1,0 +1,50 @@
+
+body{
+    font-family: Times;
+    font-size: 12px;
+    color:black;
+    margin: auto;
+    background-color: #E9ECFC;
+    width: 800px;
+}
+
+h1{
+    font-family: Georgia;
+    font-size: 36px;
+    font-weight: bold;
+    color:red;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Times New Roman';
+    font-size:18px;
+    font-weight: bold;
+    color:darkblue;
+    text-align: right;
+    border-bottom: solid 2px;
+}
+
+ol{
+    font-family: 'Comic San';
+    font-size:14px;
+    color:darkblue;
+    background-color: rgb(245, 245, 139);
+    border: dotted;
+    text-align: left;
+    width: 40%;
+    margin: 20px 50px 20px;
+    padding: 20px 50px 20px 50px;
+
+}
+
+.presupuesto{
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.rojo{
+    color: darkred;
+}
