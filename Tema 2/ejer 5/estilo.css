@@ -1,4 +1,8 @@
 
+.massu{
+    text-align: center;
+}
+
 body{
     font-family: Times;
     font-size: 12px;
@@ -25,6 +29,14 @@ h2{
     border-bottom: solid 2px;
 }
 
+.coche_blanco{
+    float: right;
+}
+
+.coche_amarillo{
+    float: left;
+}
+
 ol{
     font-family: 'Comic San';
     font-size:14px;
@@ -39,12 +51,28 @@ ol{
 }
 
 .presupuesto{
-    background-color: white;
+    background-color: white ;
     text-align: center;
     font-weight: bold;
     font-size: 24px;
 }
 
+.fotos{
+    margin-left: 150px;
+}
+
 .rojo{
     color: darkred;
+}
+
+/* Estilo básico del enlace */
+a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #007bff; /* Color inicial del enlace */
+}
+
+/* Estilo al pasar el ratón sobre el enlace */
+a:hover {
+    color: #7d018d; /* Color del enlace al pasar el ratón */
+    text-decoration: none; /* Asegura que no aparezca el subrayado */
 }
