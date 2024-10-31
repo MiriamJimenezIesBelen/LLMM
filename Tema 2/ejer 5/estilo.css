@@ -9,7 +9,7 @@ body{
     color:black;
     margin: auto;
     background-color: #E9ECFC;
-    width: 800px;
+    width: 70%;
 }
 
 h1{
@@ -29,11 +29,11 @@ h2{
     border-bottom: solid 2px;
 }
 
-.coche_blanco{
+.honda1{
     float: right;
 }
 
-.coche_amarillo{
+.honda2{
     float: left;
 }
 
@@ -58,7 +58,7 @@ ol{
 }
 
 .fotos{
-    margin-left: 150px;
+    text-align: center;
 }
 
 .rojo{
