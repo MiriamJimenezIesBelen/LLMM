@@ -1,16 +1,31 @@
 
 
 table{
-    width: 70%;
+    width: 50%;
+    margin: 0 auto;
+    
 }
+
+table caption{
+    text-align:center;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(108, 76, 224);
+}
+
+table td{
+    padding: 10px;
+}
+
 table tr.encabezado{
     background-color: rgb(0, 132, 255);
-    color: white;
+    color: rgba(240, 248, 255, 0.945);
 }
 
 tr.encabezado1{
     background-color: orangered;
-    color: white;
+    color: aliceblue;
+    text-align: left;
 }
 
 tr.primera td.primera_columna{
