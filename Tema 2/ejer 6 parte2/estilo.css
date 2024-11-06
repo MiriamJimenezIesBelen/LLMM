@@ -3,8 +3,20 @@
 table{
     width: 50%;
     margin: 0 auto;
-    
+     border-collapse: collapse; /* Para unir los bordes */
+
 }
+
+   
+  
+  
+  th, td {
+    border: none; /* Quita todos los bordes */
+  }
+  
+  tr {
+    border-bottom: 1px solid #ccc; /* Solo agrega una línea horizontal debajo de cada fila */
+  }
 
 table caption{
     text-align:center;
