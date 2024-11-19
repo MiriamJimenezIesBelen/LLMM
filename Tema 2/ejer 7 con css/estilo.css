@@ -1,0 +1,38 @@
+
+form{
+    color:aliceblue;
+    background-color: rgb(4, 4, 158);
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="textarea"]{
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    width: 75%;
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
+}

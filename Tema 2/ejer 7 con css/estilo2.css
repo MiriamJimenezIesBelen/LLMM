@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  form {
+    background-color: #f2c744;
+    border: 2px solid #8b4513;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #8b4513;
+  }
+  
+  .opciones {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .opciones div {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #8b4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
