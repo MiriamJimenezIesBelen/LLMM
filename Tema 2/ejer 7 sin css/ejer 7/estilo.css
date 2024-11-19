@@ -1,0 +1,12 @@
+
+div label{
+    width: 20%;
+}
+
+div input{
+    border: solid brown dotted;
+}
+
+.ejer4{
+    display: inline;
+}

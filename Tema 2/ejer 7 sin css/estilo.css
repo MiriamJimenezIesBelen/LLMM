@@ -6,3 +6,7 @@ div label{
 div input{
     border: solid brown dotted;
 }
+
+.ejer4{
+    display: inline;
+}
