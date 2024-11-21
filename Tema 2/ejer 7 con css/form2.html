@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="descripton" content = "Esto es una página de prueba"/>
+    <meta name="author" conetnt="Miriam Jiménez"/>
+    <meta name="keywords" content="etiquetas,página"/>
+    <link rel="stylesheet" type="text/css" href="estilo2.css" />
+    <title>Formulario</title>
+</head>
+<body>
+<form id="formul1" name="formul1" method="post" >
+    <h1>- Pedido de pizza -</h1>
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="name" required="true" />
+    </div>
+    <div>
+        <label for="nombre">Direccion</label>
+        <input type="text" name="direccion" id="direccion" required="true" />
+    </div>
+
+    <div>
+        <label for="paga">Ingredientes</label>
+        <input id="vale" name="vale" type="radio">queso</input>
+        <input id="tarjeta" name="tarjeta" type="radio">cebolla</input>
+        <input id="cash" name="cash" type="radio" checked=" ">pimiento</input>
+    </div>
+
+    <div >
+        <label for="tamaño">Tamano </label>
+        <input id="tamaño" name="pequeña" type="checkbox"> Pequena</input>
+        <input id="tamaño" name="mediana" type="checkbox" checked=""> Mediana</input>
+        <input id="tamaño" name="grande" type="checkbox" > Grande</input>
+    </div>
+
+    <div>
+        <label for="paga">Forma de pago</label>
+        <input id="vale" name="vale" type="radio">Visa</input>
+        <input id="tarjeta" name="tarjeta" type="radio">Tarjeta</input>
+        <input id="cash" name="cash" type="radio" checked=" ">CASH</input>
+    </div>
+
+    <div>
+        <label for="comentario">Instrucciones especiales</label>
+        <textarea cols="40" rows="5" id="comentarios" name="comentarios"></textarea>
+    </div>
+
+    <div>
+        <input type="submit" value="Enviar"/>
+        <input value="Borrar" type="reset" />
+    </div>
+</form>
+   
