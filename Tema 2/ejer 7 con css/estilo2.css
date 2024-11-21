@@ -92,3 +92,33 @@ input[type="submit"]:hover, input[type="reset"]:hover {
   background-color: darkorange;
 }
 
+.comentario label{
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 7px;
+
+}
+
+.nombre label{
+  margin-bottom: 7px;
+}
+
+.direccion label{
+  margin-bottom: 7px;
+}
+
+.nombre input{
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+.direccion input{
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+
+
