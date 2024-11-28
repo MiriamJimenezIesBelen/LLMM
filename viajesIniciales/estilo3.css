@@ -31,7 +31,7 @@ h2{
 form{
     background-color: lightgray;
     color: black;
-    margin: 50px auto; /* Centrar horizontalmente */
+    margin: 0 auto; /* Centrar horizontalmente */
     width: 75%;
 }
 
@@ -59,6 +59,15 @@ button {
     display: block;
     clear: both;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 15px 0 0 0;
 }
 
+div.bloque{
+    display:block;
+    clear: both;
+    margin: 15px 0 0 0;
+}
+.texto{
+    display: block;
+    text-align: right;
+}

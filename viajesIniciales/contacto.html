@@ -21,48 +21,50 @@
 
     <form id="formul1" name="formul1" action="http://testform.montysoft.org" method="POST" >
         <h2>Formulario</h2>
+        <div class="bloque">
         <div>
             <label for="email">Email</label>
-            <input type="text" name="email" id="email"  required="true" placeholder="Introducir email"/>
+            <input class="texto" type="text" name="email" id="email"  required="true" placeholder="Introducir email"/>
         </div>
 
         <div>
             <label for="contrasena">Contraseña</label>
-            <input type="password" id="contrasena" name="contrasena" placeholder="Introducir contraseña"/>
+            <input class="texto" type="password" id="contrasena" name="contrasena" placeholder="Introducir contraseña"/>
         </div>
 
         <div>
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="name"/>
+            <input class="texto" type="text" name="nombre" id="name"/>
         </div>
 
         <div>
             <label for="color">color preferido:</label>
-            <input type="color" name="nombre" id="name"/>
+            <input class="texto" type="color" name="nombre" id="name"/>
         </div>
         
         <div>
             <label for="web" >Web</label>
-            <input type="text" name="web" />
+            <input class="texto" type="text" name="web" />
         </div>
 
         <div>
             <label for="telefono" >Teléfono</label>
-            <input type="text" name="telefono" />
+            <input class="texto" type="text" name="telefono" />
         </div>
 
         <div>
             <label for="fecha_nac">Fecha de nacimiento:</label>
-            <input type="date" name="fecha_nac" id="fecha_nac"/>
+            <input class="texto" type="date" name="fecha_nac" id="fecha_nac"/>
         </div>
+
         <div >
             <label for="Transporte">Transporte </label>
-            <input id="Transporte" name="coche" type="checkbox"> Coche</input>
-            <input id="Transporte" name="barco" type="checkbox" >Barco</input>
+            <input  id="Transporte" name="coche" type="checkbox"> Coche</input>
+            <input  id="Transporte" name="barco" type="checkbox" >Barco</input>
             <input id="Transporte" name="tren" type="checkbox" checked="">Tren</input>
             <input id="Transporte" name="avion" type="checkbox" >Avión</input>
         </div>
-
+        </div>
         <div class="guia">
         <fieldset>
             <label for="pago" >Opción a Guía</label>
