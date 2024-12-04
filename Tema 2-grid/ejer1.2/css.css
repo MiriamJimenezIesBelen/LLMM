@@ -23,6 +23,7 @@
     display: grid;
     grid-area: primera;
     background-color: red;
+    height: 30px;
 }
 
 .segunda{
@@ -30,6 +31,7 @@
     display: grid;
     grid-area: segunda;
     background-color: green;
+    height: 30px;
 }
 
 .tercera{
@@ -37,6 +39,7 @@
     display: grid;
     grid-area: tercera;
     background-color: blue;
+    height: 30px;
 }
 
 .cuarta{
@@ -51,6 +54,7 @@
     display: grid;
     grid-area: quinta;
     background-color: lightskyblue;
+    height: 30px;
 }
 
 .sexta{
@@ -58,6 +62,7 @@
     display: grid;
     grid-area: sexta;
     background-color: greenyellow;
+    height: 30px;
 }
 
 .septima{
@@ -65,4 +70,5 @@
     display: grid;
     grid-area: septima;
     background-color: black;
+    height: 30px;
 }
