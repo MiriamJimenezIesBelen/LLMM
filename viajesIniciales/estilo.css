@@ -1,0 +1,72 @@
+
+body{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+h1{
+    background-color: darkblue;
+    color:antiquewhite;
+    text-align: center;
+    margin: auto;
+}
+
+#menu{
+    background-color: darkgreen;
+    text-align: right;
+    padding: 0.2px;
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: lightseagreen; /* Color inicial del enlace */
+    margin-right: 5px;
+}
+
+/* Estilo al pasar el ratón sobre el enlace */
+a:hover {
+    color: lightcoral; /* Color del enlace al pasar el ratón */
+    text-decoration: underline; 
+    font-weight: bold;
+}
+
+.rojo{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+.vuelos{
+    text-align: left;
+}
+
+.vuelos a{
+    text-decoration: underline; 
+    color: lightskyblue; /* Color inicial del enlace */
+}
+
+.vuelos a:hover{
+    color: lightcoral; /* Color del enlace al pasar el ratón */
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.hoteles{
+    text-align: left;
+}
+
+.hoteles a{
+    text-decoration: underline; 
+    color: lightskyblue; /* Color inicial del enlace */
+}
+
+.hoteles a:hover{
+    color: lightcoral; /* Color del enlace al pasar el ratón */
+    text-decoration: none; 
+    font-weight: bold;
+}

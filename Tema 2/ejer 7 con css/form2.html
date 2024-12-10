@@ -11,42 +11,42 @@
 <body>
 <form id="formul1" name="formul1" method="post" >
     <h1>- Pedido de pizza -</h1>
-    <div>
-        <label for="nombre">Nombre:</label>
+    <div class="nombre">
+        <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="name" required="true" />
     </div>
-    <div>
-        <label for="nombre">Direccion</label>
+    <div class="direccion">
+        <label for="direccion">Direccion</label>
         <input type="text" name="direccion" id="direccion" required="true" />
     </div>
 
-    <div>
+    <div class="ingredientes">
         <label for="paga">Ingredientes</label>
         <input id="vale" name="vale" type="radio">queso</input>
         <input id="tarjeta" name="tarjeta" type="radio">cebolla</input>
         <input id="cash" name="cash" type="radio" checked=" ">pimiento</input>
     </div>
 
-    <div >
+    <div class="tamano" >
         <label for="tamaño">Tamano </label>
         <input id="tamaño" name="pequeña" type="checkbox"> Pequena</input>
         <input id="tamaño" name="mediana" type="checkbox" checked=""> Mediana</input>
         <input id="tamaño" name="grande" type="checkbox" > Grande</input>
     </div>
 
-    <div>
+    <div class="pago">
         <label for="paga">Forma de pago</label>
         <input id="vale" name="vale" type="radio">Visa</input>
         <input id="tarjeta" name="tarjeta" type="radio">Tarjeta</input>
         <input id="cash" name="cash" type="radio" checked=" ">CASH</input>
     </div>
 
-    <div>
+    <div class="comentario">
         <label for="comentario">Instrucciones especiales</label>
         <textarea cols="40" rows="5" id="comentarios" name="comentarios"></textarea>
     </div>
 
-    <div>
+    <div class="botones">
         <input type="submit" value="Enviar"/>
         <input value="Borrar" type="reset" />
     </div>
