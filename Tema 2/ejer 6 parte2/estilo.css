@@ -1,0 +1,61 @@
+
+
+table{
+    width: 60%;
+    margin: 0 auto;
+     border-collapse: collapse; /* Para unir los bordes */
+
+}
+
+   
+  
+  
+  th, td {
+    border: none; /* Quita todos los bordes */
+  }
+  
+  tr {
+    border-bottom: 1px solid #ccc; /* Solo agrega una línea horizontal debajo de cada fila */
+  }
+
+table caption{
+    text-align:center;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(108, 76, 224);
+}
+
+table td{
+    padding: 10px;
+}
+
+table tr.encabezado{
+    background-color: rgb(0, 132, 255);
+    color: rgba(240, 248, 255, 0.774);
+}
+
+tr.encabezado1{
+    background-color: orangered;
+    color: aliceblue;
+    text-align: left;
+}
+
+tr.primera td.primera_columna{
+    background-color: rgb(253, 226, 104);
+    color: aliceblue;
+}
+
+tr.segunda td.primera_columna{
+    background-color: rgb(253, 226, 104);
+    color: aliceblue;
+}
+
+tr.tercera td.primera_columna{
+    background-color: rgb(253, 226, 104);
+    color: aliceblue;
+}
+
+tbody{
+    background-color: aliceblue;
+    color: black;
+}

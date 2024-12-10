@@ -1,0 +1,44 @@
+
+body{
+    font-family: Times;
+    font-size: 12px;
+    color:black;
+    font-weight: normal;
+}
+
+table.horario td,th{
+    border:solid 1px lightgrey;
+    border-collapse: collapse;
+}
+
+table.horario td{
+    padding: 10px;
+}
+table.horario{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    
+}
+
+table.horario th{
+    padding: 5px;
+    background-color:rgb(255, 249, 167);
+    color:rgb(207, 194, 70);
+    border-bottom: solid 1px;
+}
+
+table.horario caption{
+    font-family: Arial;
+    font-size: 36px;
+    color:green;
+    text-align: center;
+}
+
+table.horario tr:nth-child(odd){
+    background-color: rgb(226, 241, 247);
+}
+
+table.horario tr:nth-child(even){
+    background-color:rgb(173, 202, 226);
+}

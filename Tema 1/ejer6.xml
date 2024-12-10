@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<pedido>
-    <destinatario> Jose Antonio Lojo</destinatario>
-    <articulo> bicicleta A2020</articulo>
-    <direccion>Calle BArci 4,tercer piso, letra A</direccion>
-    <fecha> 20-09-2019</fecha>
-    <atributo>1111</atributo>
-</pedido>

@@ -1,0 +1,124 @@
+/* Estilo para el body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor del formulario */
+form {
+  background-color: #ffcc99;
+  width: 600px;
+  margin: 50px auto; /* Centrar horizontalmente */
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #d88;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del encabezado */
+h1 {
+  background-color: orange;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+label {
+  background-color: brown;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  width: 150px; /* Ancho fijo */
+  box-sizing: border-box;
+}
+
+/* Contenedor de cada grupo (Nombre, Dirección, etc.) */
+div {
+  margin-bottom: 15px;
+  overflow: hidden; /* Asegura alineación de elementos flotantes */
+}
+
+/* Estilo para los inputs de texto */
+input[type="text"], input[type="number"], textarea {
+  width: calc(100% - 160px); /* Alinear con las etiquetas */
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilo para los radio buttons y checkboxes */
+.ingredientes input, .tamano input, .pago input {
+  margin-left: 10px;
+}
+
+/* Contenedor para organizar los radios y checkboxes en bloque */
+.ingredientes, .tamano, .pago {
+  padding-left: 160px;
+}
+
+/* Estilo para el textarea */
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Botones */
+input[type="submit"], input[type="reset"] {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: darkorange;
+}
+
+.comentario label{
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 7px;
+
+}
+
+.nombre label{
+  margin-bottom: 7px;
+}
+
+.direccion label{
+  margin-bottom: 7px;
+}
+
+.nombre input{
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+.direccion input{
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+
+

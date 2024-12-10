@@ -1,0 +1,88 @@
+
+h1{
+    background-color: darkblue;
+    color:antiquewhite;
+    text-align: center;
+    margin: auto;
+}
+
+#menu{
+    background-color: darkgreen;
+    text-align: right;
+    padding: 0.2px;
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: lightseagreen; /* Color inicial del enlace */
+    margin-right: 5px;
+}
+
+/* Estilo al pasar el ratón sobre el enlace */
+a:hover {
+    color: lightcoral; /* Color del enlace al pasar el ratón */
+    text-decoration: underline; 
+    font-weight: bold;
+}
+
+h2{
+    border: solid brown;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 50%;
+}
+
+ul.lista{
+    border: solid goldenrod;
+    border-right: dotted goldenrod;
+    border-left: dotted goldenrod;
+    width: 25%;
+    background-color: lightgray;
+}
+
+.costumbres_japon{
+    float: right;
+    display:inline;
+}
+.costumbres2_japon{
+    float: left;
+    display:inline;
+    margin-right: 5px;
+}
+
+table td,th{
+    border: none; /* Quita todos los bordes */
+}
+
+table td{
+    padding: 10px;
+}
+table{
+    margin: 0 auto;
+    border:dotted black;
+    text-align: center;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+table th{
+    padding: 5px;
+    background-color:green;
+    color:white;
+    border-bottom: solid 1px;
+}
+
+table caption{
+    font-family: Arial;
+    font-size: 36px;
+    color:green;
+    text-align: center;
+}
+
+table tr:nth-child(odd){
+    background-color: white;
+}
+
+table tr:nth-child(even){
+    background-color:lightgray;
+}

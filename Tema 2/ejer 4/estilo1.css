@@ -1,0 +1,68 @@
+
+h1{
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: bold;
+    color:darkblue;
+    border-top: solid darkblue;
+    border-bottom: solid darkblue;
+    text-align: center;
+    background-color: white;
+    margin: 20px auto;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color: gainsboro;
+    margin:20px;
+    width: 75%;
+}
+
+#menu{
+    background-color: lightcoral;
+    border: solid darkred;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 25px;
+    color:blue;
+    width: 25%;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+nav ul li a {
+    
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color:aliceblue;
+    text-decoration: underline;
+}
+
+/* Estilos para los enlaces */
+a:link, a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: yellow;
+}
+
+/* Para poner los circulos como imagenes*/
+
+nav ul li {
+    list-style: none;
+    background: url('assets/css/secundaria.png') no-repeat left center;
+    padding-left: 30px; /* Ajusta según el tamaño de la imagen */
+    background-size: 20px; /* Ajusta el tamaño de la imagen */
+    margin-bottom: 10px;
+}

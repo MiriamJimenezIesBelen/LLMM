@@ -1,0 +1,74 @@
+
+.contenedor{
+    border: solid red;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+    padding: 40px;
+    margin: 0;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "primera primera primera primera"
+        "segunda segunda cuarta cuarta"
+        "tercera tercera cuarta cuarta"
+        "quinta quinta sexta sexta"
+        "septima septima septima septima";
+}
+
+.primera{
+    border: solid black;
+    display: grid;
+    grid-area: primera;
+    background-color: red;
+    height: 30px;
+}
+
+.segunda{
+    border: solid black;
+    display: grid;
+    grid-area: segunda;
+    background-color: green;
+    height: 30px;
+}
+
+.tercera{
+    border: solid black;
+    display: grid;
+    grid-area: tercera;
+    background-color: blue;
+    height: 30px;
+}
+
+.cuarta{
+    border: solid black;
+    display: grid;
+    grid-area: cuarta;
+    background-color: orange;
+}
+
+.quinta{
+    border: solid black;
+    display: grid;
+    grid-area: quinta;
+    background-color: lightskyblue;
+    height: 30px;
+}
+
+.sexta{
+    border: solid black;
+    display: grid;
+    grid-area: sexta;
+    background-color: greenyellow;
+    height: 30px;
+}
+
+.septima{
+    border: solid black;
+    display: grid;
+    grid-area: septima;
+    background-color: black;
+    height: 30px;
+}
