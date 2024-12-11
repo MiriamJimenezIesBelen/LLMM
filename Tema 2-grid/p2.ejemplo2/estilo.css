@@ -1,0 +1,68 @@
+
+h1{
+    text-align: center;
+    color: darkblue;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-areas: 
+    "nav aside"
+    "section aside"
+    "footer footer";
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto auto auto;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: left;
+    color: yellow;
+    background-color: green;
+}
+
+section{
+    grid-area: section;
+    background-color: lightgreen;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+section h1{
+    color: brown;
+}
+
+article h2{
+    color:darkorchid;
+}
+
+article p{
+    background-color: aliceblue;
+    border: 1px solid lightseagreen;
+    color: black;
+}
+
+aside{
+    grid-area: aside;
+    background-color: palevioletred;
+}
+
+#publicidad{
+    border: 1px solid blue;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: lightblue;
+    color: blue;
+}
+
+.verde{
+    color: green;
+}
