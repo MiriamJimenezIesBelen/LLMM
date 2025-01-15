@@ -1,0 +1,11 @@
+
+{"nombre-empresa":"HALLO",
+    "datos-empresa":{
+        "dirreccion":"calle larios",
+        "telefono":847938473,
+        "email": "hola@gmail.com"
+    },
+    "numero-empleados":56,
+    "deudas":true
+
+}

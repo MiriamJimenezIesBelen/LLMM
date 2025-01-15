@@ -1,0 +1,18 @@
+{"num-estudiantes":{
+    "primaria":54,
+    "secundaria":34,
+    "formacion-profesional":{
+        "FBP":6,
+        "CFGM":45,
+        "CFGS":3
+    },
+    "bachillerato":43
+    },
+    "nombre-colegio":"IES Litoral",
+    "ciudad":{
+        "nombre":"Malaga",
+        "provincia":"Malaga",
+        "codigo-postal":29004,
+        "distancia":89328
+    }
+}
