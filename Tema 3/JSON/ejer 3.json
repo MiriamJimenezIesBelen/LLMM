@@ -1,0 +1,32 @@
+{"nombre_apellidos": "Juan Perez",
+    "datos_contacto":{
+        "correo": "usuario@gmail.com",
+        "telefono": 348743893
+    },
+    "ciudad_origen":"Barcelona",
+    "nombre_acompañantes":["Maria","Rosa","Alex"],
+    "gasto_total": 394,
+    "relacion_destinos":[
+        {
+            "satisfecho":true,
+            "ciudad":"Malaga",
+            "hotel":{
+                "nombre": "Barcelo",
+                "estrellas":2,
+                "precio_noche":43,
+                "num_noches":2
+            }
+        },
+        {
+            "satisfecho": false,
+            "ciudad": "Valencia",
+            "hotel": {
+              "nombre": "Hotel Mar",
+              "estrellas": 3,
+              "precio_noche": 80,
+              "num_noches": 2
+            }
+          }
+    ]
+
+}

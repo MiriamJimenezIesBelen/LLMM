@@ -1,0 +1,50 @@
+{
+    "estudiante":
+    [
+        {
+            "expediente":{
+                "nombre_titulacion":"Bachillerato",
+                "nombre_estudiante":{
+                    "apellidos": "Lopez Moreno",
+                    "nombre":"Pablo"
+                },
+                "email":"usuario@gmail.com",
+                "repite":true,
+                "nombre-amigos":["Juan","Pepe","Nuria"],
+                "asignaturas":[
+                    {
+                        "nombre": "Lengua",
+                        "nota":6
+                    },
+                    {
+                        "nombre": "Mates",
+                        "nota":4
+                    }
+                ]
+            }
+        },
+
+        {
+            "expediente":{
+                "nombre_titulacion":"Bachillerato",
+                "nombre_estudiante":{
+                    "apellidos": "Jimenez Florido",
+                    "nombre":"Zaira"
+                },
+                "email":"usuario2@gmail.com",
+                "repite":true,
+                "nombre-amigos":["Juan","Lucia","Nuria"],
+                "asignaturas":[
+                    {
+                        "nombre": "Inglés",
+                        "nota":8
+                    },
+                    {
+                        "nombre": "Física",
+                        "nota":9
+                    }
+                ]
+            }
+        }
+    ]
+}

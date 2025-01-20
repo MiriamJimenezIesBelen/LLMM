@@ -1,0 +1,15 @@
+{
+    "personas":[
+        {
+            "-sexo":"V",
+            "nombre":"Pepe",
+            "edad":46
+
+        },
+        {
+            "-sexo":"M",
+            "nombre":"María",
+            "edad":32
+        }
+    ]
+}
