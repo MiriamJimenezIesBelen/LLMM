@@ -2,8 +2,8 @@
     "inventario":{
         "productos":[
             {
-                "-codigo":"001",
-                "-categoria":"Electrónicos",
+                "codigo":"001",
+                "categoria":"Electrónicos",
                 "nombre":"Televisor",
                 "precio":599.99,
                 "fecha_ingreso":"2023-07-15",
@@ -11,8 +11,8 @@
             },
 
             {
-                "-codigo":"002",
-                "-categoria":"Ropa",
+                "codigo":"002",
+                "categoria":"Ropa",
                 "nombre":"Camiseta",
                 "precio":29.99,
                 "fecha_ingreso":"2023-07-16",
@@ -20,8 +20,8 @@
             },
 
             {
-                "-codigo":"003",
-                "-categoria":"Hogar",
+                "codigo":"003",
+                "categoria":"Hogar",
                 "nombre":"Lámpara",
                 "precio":39.99,
                 "fecha_ingreso":"2023-07-17",
