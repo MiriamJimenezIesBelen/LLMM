@@ -1,0 +1,38 @@
+{
+    "empleados":
+    [
+        {
+            "id":"E001",
+            "puestos":[
+                {
+                    "nombre_puesto":"Bibliotecario"
+                },
+                {
+                    "nombre_puesto":"Gerente"
+                }
+            ],
+            "nombre": "Ana López",
+            "horario":{
+                "dia":"Lunes a Viernes",
+                "horas":"8:00 - 16:00"
+            }
+        },
+
+        {
+            "id":"E002",
+            "puestos":[
+                {
+                    "nombre_puesto":"Asistente"
+                },
+                {
+                    "nombre_puesto":"Compra-venta"
+                }
+            ],
+            "nombre": "Pedro García",
+            "horario":{
+                "dia":"Martes a Sábado",
+                "horas":"10:00 - 18:00"
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "nombre_Instituto":"Tecnológico Superior",
+    "Cursos_Instituto":
+    [
+        {
+            "nombre": "Desarrollo de Aplicaciones",
+            "nivel": "Grado Superior",
+            "aulas":[
+                {
+                    "id": 101,
+                    "capacidad": 30,
+                    "equipamiento":["ordenadores","proyector","pizarra"]
+                },
+                {
+                    "id": 102,
+                    "capacidad": 25,
+                    "equipamiento": ["ordenadores","pizarra"]
+                }
+            ]
+        },
+
+        {
+            "nombre": "Redes y Sistemas",
+            "nivel": "Grado Superior",
+            "aulas":[
+                {
+                    "id": 201,
+                    "capacidad": 20,
+                    "equipamiento":["switches","routers","pizarra"]
+                },
+                {
+                    "id": 202,
+                    "capacidad": 15,
+                    "equipamiento": ["switches","proyector","ordenadores"]
+                }
+            ]
+        }
+    ]
+}
