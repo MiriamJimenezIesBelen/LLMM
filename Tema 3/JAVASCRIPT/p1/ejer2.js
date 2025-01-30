@@ -5,7 +5,8 @@ let armaSecundaria = "Arco Simple";
 let nivel = 5; 
 let puntosDeVida = 100; 
 let tieneArmadura = true; 
-
+let nivelCadena = nivel.toString(); 
+let puntosFloat = parseFloat(puntosDeVida); 
 
 console.log(`Información inicial del héroe:
 Nombre: ${nombreHeroe}
@@ -15,10 +16,6 @@ Nivel: ${nivelCadena}
 Puntos de vida: ${puntosFloat}
 Tiene armadura equipada: ${tieneArmadura}
 `);
-
-
-let nivelCadena = nivel.toString(); 
-let puntosFloat = parseFloat(puntosDeVida); 
 
 
 console.log(`Transformaciones:
