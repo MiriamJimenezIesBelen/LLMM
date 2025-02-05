@@ -1,0 +1,99 @@
+
+
+1. XHTML y HTML
+HTML (HyperText Markup Language):
+
+Propósito: Es el lenguaje estándar para crear y estructurar páginas web.
+Características: Estructura básica de documentos web, permite la inclusión de texto, 
+imágenes, enlaces, etc. Es más flexible y tolerante con los errores.
+XHTML (Extensible HyperText Markup Language):
+
+Propósito: Es una versión más estricta de HTML que combina características de XML.
+Características: Requiere un código bien formado, es más riguroso en cuanto a 
+la estructura y los elementos. Debe cerrarse correctamente y usar minúsculas.
+Diferencias:
+
+XHTML es más estricto que HTML en su sintaxis.
+XHTML puede ser considerado más moderno y orientado a XML.
+HTML5: Se puede considerar que ha sustituido a XHTML en muchos casos, 
+ya que combina características de ambos y ofrece más capacidades (como el soporte de multimedia y gráficos).
+
+2. XML
+XML (eXtensible Markup Language):
+
+Utilidad: Se usa para almacenar y transportar datos. Permite definir etiquetas personalizadas.
+Características: Estructura jerárquica, legibilidad tanto para humanos como para máquinas, y es extensible.
+Versiones: XML 1.0 (1998), XML 1.1 (2004), y varias recomendaciones adicionales 
+para especificaciones como XML Schema.
+
+
+3. Diferencia entre un lenguaje de marcas y un lenguaje de programación
+Lenguaje de marcas: Se utiliza para estructurar y presentar datos (ej. HTML, XML). 
+No tiene lógica de programación.
+Lenguaje de programación: Se usa para crear algoritmos y lógica (ej. Python, Java). 
+Permite la manipulación de datos y el control de flujo.
+
+
+4. ISO y W3C
+ISO (International Organization for Standardization): Crea estándares internacionales que pueden afectar 
+la interoperabilidad de tecnologías web.
+W3C (World Wide Web Consortium): Define estándares para asegurar el crecimiento de la web. 
+Sus recomendaciones afectan el desarrollo web, asegurando que los sitios sean compatibles con diferentes
+ navegadores y dispositivos.
+
+
+5. Ejemplos de lenguajes
+Lenguaje de presentación: CSS (Cascading Style Sheets).
+Lenguaje descriptivo: XML (eXtensible Markup Language).
+Lenguaje procedimental: HTML
+
+
+6. Ver código fuente de una página web
+Para ver el código fuente de una página web:
+
+En la mayoría de navegadores, haz clic derecho en la página y selecciona "Ver código fuente" o "Inspeccionar".
+Alternativamente, puedes presionar Ctrl+U (Windows) o Cmd+U (Mac).
+
+
+7. Respuestas en una palabra
+Ejemplo más representativo de lenguaje de marcas orientado a la presentación: HTML
+HTML es un lenguaje de marcas creado a partir de: SGB.
+XML es un lenguaje de marcas derivado de: SGML.
+XHTML es un lenguaje derivado de: XML.
+
+
+8. Dialecto XML para representar gráficos
+SVG (Scalable Vector Graphics).
+
+
+9. Dialecto XML para funciones matemáticas
+MathML (Mathematical Markup Language).
+
+
+10. Esquema de la evolución de los lenguajes de marcas
+css
+Copiar código
+GML
+SGML
+  ├─ HTML
+  ├─ XML
+  │    ├─ XHTML
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
