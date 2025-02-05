@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>La ruleta del aprobado</title>
+    <link href='https://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+    <link href='ruleta.css' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('jackpot.jpg'); /* Imagen de fondo */
+            background-size: cover;
+            color: white;
+        }
+        .contenedor {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .imagenes img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            box-shadow: 2px 2px 5px #FF5050;
+        }
+        .botones {
+            margin-top: 20px;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background: gold;
+            color: black;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .boton:hover {
+            background: orange;
+        }
+    </style>
+    <script>
+        let imagenes = ["7.jpeg", "uvas.jpeg", "manzana.png", "estrella.jpge"];
+        let cuadro = [0, 0, 0, 0]; // Ahora hay 4 casillas
+        let intervaloRuleta = [null, null, null, null];
+        let corriendo = 0;
+        let intervaloSombras;
+        let posicionSombras = [[2, 2], [-2, 2], [-2, -2], [2, -2]];
+        let posicionActualSombra = 0;
+
+        function ruleta() {
+            if (corriendo === 0) {
+                clearInterval(intervaloSombras);
+
+                for (let i in cuadro) {
+                    cuadro[i] = Math.floor(Math.random() * imagenes.length);
+                }
+
+                for (let i = 0; i < 4; i++) {
+                    intervaloRuleta[i] = setInterval(() => cambiaImagen(i), 100 - (i * 20));
+                }
+
+                corriendo = 4;
+            }
+        }
+
+        function cambiaImagen(x) {
+            cuadro[x] = (cuadro[x] + 1) % imagenes.length;
+            document.getElementById("imag" + x).src = imagenes[cuadro[x]];
+        }
+
+        function paraRuleta() {
+            if (corriendo > 0) {
+                corriendo--;
+                clearInterval(intervaloRuleta[corriendo]);
+
+                if (corriendo === 0) cambiaSombras();
+            }
+        }
+
+        function paraDosRuletas() {
+            if (corriendo >= 2) {
+                clearInterval(intervaloRuleta[corriendo - 1]);
+                clearInterval(intervaloRuleta[corriendo - 2]);
+                corriendo -= 2;
+
+                if (corriendo === 0) cambiaSombras();
+            }
+        }
+
+        function cambiaSombras() {
+            intervaloSombras = setInterval(circulaSombras, 100);
+        }
+
+        function circulaSombras() {
+            posicionActualSombra = (posicionActualSombra + 1) % posicionSombras.length;
+            let estilo = `${posicionSombras[posicionActualSombra][0]}px ${posicionSombras[posicionActualSombra][1]}px 5px #FF5050`;
+
+            for (let i = 0; i < 4; i++) {
+                document.getElementById("imag" + i).style.boxShadow = estilo;
+            }
+        }
+    </script>
+</head>
+<body onload="cambiaSombras();">
+    <div class="contenedor">
+        <div class="imagenes">
+            <img id="imag3" src="7.jpeg">
+            <img id="imag2" src="uvas.jpeg">
+            <img id="imag1" src="manzana.png">
+            <img id="imag0" src="estrella.jpeg">
+        </div>
+        <div class="botones">
+            <div class="boton" id="iniciar" onclick="ruleta();">Iniciar</div>
+            <div class="boton" id="parar" onclick="paraRuleta();">Parar</div>
+            <div class="boton" id="pararDos" onclick="paraDosRuletas();">Parar 2 Casillas</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Atrás</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #contador {
+            font-size: 50px;
+            font-weight: bold;
+            color: brown;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        let n = 9;
+        let intervalo;
+
+        function iniciarCuentaAtras() {
+            if (intervalo) clearInterval(intervalo); // Evita múltiples intervalos
+            n = 9;
+            document.getElementById("contador").innerText = n;
+            
+            intervalo = setInterval(() => {
+                n--;
+                document.getElementById("contador").innerText = n;
+                
+                if (n === 0) {
+                    clearInterval(intervalo);
+                }
+            }, 1000);
+        }
+    </script>
+</head>
+<body onload="iniciarCuentaAtras()">
+    <div id="contador">9</div>
+    <button onclick="iniciarCuentaAtras()">Reiniciar</button>
+</body>
+</html>
