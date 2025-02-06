@@ -1,0 +1,1 @@
+const num = parseInt(promport ("intrdouce numero"));
