@@ -1,15 +1,31 @@
+
+h1{
+    text-align: center;
+}
+
 .contenedor{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto ;
     grid-template-areas: 
         "uno dos tres"
         "cuatro cinco seis";
     width: 90%;
     text-align: center;
+
     color: darkred;
-    background-color: lightblue;
+    background-color: white;
     font: 10px;
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.uno, .dos, .tres, .cuatro, .cinco, .seis {
+    border: 1px solid white; /* Línea blanca alrededor de cada recuadro */
+    padding: 10px; /* Espacio interno */
+    background-color: lightblue; /* Fondo de cada recuadro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .uno{
