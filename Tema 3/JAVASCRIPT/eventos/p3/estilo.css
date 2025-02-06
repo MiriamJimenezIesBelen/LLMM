@@ -1,9 +1,10 @@
 .contenedor{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-    grid-area: "uno dos tres"
-                "cuatro cinco seis";
+    grid-template-areas: 
+        "uno dos tres"
+        "cuatro cinco seis";
     width: 90%;
     text-align: center;
     color: darkred;
