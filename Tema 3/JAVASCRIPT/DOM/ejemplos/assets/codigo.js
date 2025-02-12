@@ -11,6 +11,6 @@ b1.addEventListener("click",() => {p.style.color="red";});
 
 b2.addEventListener("click",() => {img.src="./assets/manzana.png";});
 
-//b3.addEventListener("click",() => {enc.classList.toggle("nueva");});
+b3.addEventListener("click",() => {enc.classList.toggle("nueva");});
 
-console.log(enc); // Esto debería mostrar el elemento <h1> en la consola
+
