@@ -99,5 +99,20 @@ button{
 }
 
 .rojo{
-    background-color: red;
+    background-color: darkred;
+}
+
+.opcion1Click{
+    background-color: black;
+    color: white;
+}
+
+.opcion2Click{
+    background-color: white;
+    color: black;
+}
+
+.opcion3Click{
+    background-color: grey;
+    color: darkred;
 }

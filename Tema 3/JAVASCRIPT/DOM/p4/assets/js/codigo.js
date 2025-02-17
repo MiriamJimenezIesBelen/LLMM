@@ -2,14 +2,13 @@
 
 let p1 = document.querySelector(".p1");
 const img = document.querySelector(".img");
-const botonFondo = document.querySelector(".cambiarFondo");
-
 
 p1.addEventListener("mouseover", () => { p1.style.color = "red";});
 p1.addEventListener("mouseout", () => { p1.style.color = "black";});
 
 img.addEventListener("mouseover", () => {img.src="./assets/invisible.jpg";})
 img.addEventListener("mouseout", () => {img.src="./assets/robot.jpg";})
+
 
 botonFondo.addEventListener("click",cambiarFondo);
 
@@ -44,3 +43,27 @@ function cambiarFondo(){
         caja.classList.toggle("rojo");
     });
 }
+
+
+window.onload = function()  {
+    const opcion1 = document.querySelector(".opcion1");
+    const opcion2 = document.querySelector(".opcion2");
+    const opcion3 = document.querySelector(".opcion3");
+
+    // Añadimos los eventos de clic a los botones
+    opcion1.addEventListener("click", function() {
+        // Cambiar estilo de los botones
+        opcion1.classList.toggle("opcion1Click"); // Cambia el estilo del primer botón
+    });
+
+    opcion2.addEventListener("click", function() {
+        // Cambiar estilo de los botones
+        opcion2.classList.toggle("opcion2Click"); // Cambia el estilo del segundo botón
+    });
+
+    opcion3.addEventListener("click", function() {
+        // Cambiar estilo de los botones
+        opcion3.classList.toggle("opcion3Click"); // Cambia el estilo del tercer botón
+    });
+}
+
