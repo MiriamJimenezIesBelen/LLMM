@@ -2,6 +2,7 @@
 
 let p1 = document.querySelector(".p1");
 const img = document.querySelector(".img");
+const botonFondo = document.querySelector(".cambiarFondo");
 
 p1.addEventListener("mouseover", () => { p1.style.color = "red";});
 p1.addEventListener("mouseout", () => { p1.style.color = "black";});
