@@ -83,3 +83,21 @@ button{
     display: flex;
     gap: 10px;
 }
+
+.formulario {
+    border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+}
+.error {
+    font-weight: bold;
+    color: red;
+}
+.correcto {
+    font-weight: bold;
+    color: green;
+}
+
+.rojo{
+    background-color: red;
+}
