@@ -38,8 +38,9 @@ function edad() {
 
 
 function cambiarFondo(){
-    const cajasNegras = document.querySelector(".cajasNegras");
-    cajasNegras.forEach(cajasNegras => {
-        cajasNegras.classList.toggle("rojo");
+    const cajasNegras = document.querySelectorAll(".cajaNegra");
+
+    cajasNegras.forEach(caja => {
+        caja.classList.toggle("rojo");
     });
 }
