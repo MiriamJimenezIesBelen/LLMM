@@ -89,31 +89,9 @@ button{
     padding: 10px;
     width: 200px;
 }
-.error {
-    font-weight: bold;
-    color: red;
-}
-.correcto {
-    font-weight: bold;
-    color: green;
-}
 
 .rojo{
     background-color: darkred;
 }
 
-.opcion1Click{
-    background-color: black;
-    color: white;
-}
-
-.opcion2Click{
-    background-color: white;
-    color: black;
-}
-
-.opcion3Click{
-    background-color: grey;
-    color: darkred;
-}
 

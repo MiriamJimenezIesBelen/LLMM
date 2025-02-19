@@ -5,23 +5,20 @@ const img = document.querySelector(".img");
 const botonFondo = document.querySelector(".cambiarFondo");
 const caja = document.querySelector(".cajaNueve");
 
-// Cambiamos el color cuando pasamos el ratón por encima y cuando salimos
+// Cambiamos el color cuando pasamos el ratón por encima y cuando salimos del parrafo 1
 p1.addEventListener("mouseover", () => { p1.style.color = "red";});
 p1.addEventListener("mouseout", () => { p1.style.color = "black";});
 
 // Cambiamos la imagen cuando pasamos el ratón por encima y cuando salimos
-img.addEventListener("mouseover", () => {img.src="./assets/invisible.jpg";})
-img.addEventListener("mouseout", () => {img.src="./assets/robot.jpg";})
-
-// Cuando le damos click al botón de cambiar fondo utilizamos la función cambiar fondo
-botonFondo.addEventListener("click",cambiarFondo);
+img.addEventListener("mouseover", () => {img.src="./assets/invisible.jpg";});
+img.addEventListener("mouseout", () => {img.src="./assets/robot.jpg";});
 
 // Cuando le damos click al botón del formulario ultilizamos la función de la edad
 document.querySelector(".formulario button").addEventListener("click", edad);
 
+// Cuando le damos click al botón de cambiar fondo utilizamos la función cambiar fondo
+botonFondo.addEventListener("click",cambiarFondo);
 
-// Llamar a la función opciones para añadir los eventos
-opciones();
 
 // Función para validar la edad
 function edad() {
@@ -68,19 +65,22 @@ function opciones() {
     const opcion2 = document.querySelector(".opcion2");
     const opcion3 = document.querySelector(".opcion3");
 
-    // Si le damos click a la opción 1 ponemos el formato que tiene la clase opcion1Click que esta descrita en el estilo.css
+    // Si le damos click a la opción 1 ponemos el fondo negro y las letras blancas
     opcion1.addEventListener("click", () => {
-        caja.classList.toggle("opcion1Click");
+        caja.style.backgroundColor = "black";
+        caja.style.color = "white";
     });
 
-    // Hacemos lo mismo con la opción 2 y la 3
-
+    // Si le damos click a la opción 2 ponemos el fondo blanco y las letras negras
     opcion2.addEventListener("click", () => {
-        caja.classList.toggle("opcion2Click");
+        caja.style.backgroundColor = "white";
+        caja.style.color = "black";
     });
 
+    // Si le damos click a la opción 3 ponemos el fondo gris y las letras rojas
     opcion3.addEventListener("click", () => {
-        caja.classList.toggle("opcion3Click");
+        caja.style.backgroundColor = "grey";
+        caja.style.color = "red";
     });
 }
 
