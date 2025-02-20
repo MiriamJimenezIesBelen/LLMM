@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: red;
+}
+
+label{
+    border: dotted black;
+}
+
+table{
+    
+    border:solid 1px lightgrey;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
