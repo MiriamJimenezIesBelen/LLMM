@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procesar un JSON</title>
+    <title>Buscador de Pokémon</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
     <h1>Buscador de Pokémon</h1>
 
-    <label>Resultado:</label>
-    <input type="text" id="resultado">
-    <button type="button">Buscar</button>
+    <div class="buscador">
+        <input type="text" id="pokemonName" placeholder="Ingrese un Pokémon">
+        <button id="b1">Buscar</button>
+    </div>
 
     <table>
         <tr>
@@ -21,14 +22,15 @@
             <th>Altura</th>
             <th>Tipos</th>
         </tr>
-
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="nombre"></td>
+            <td><img class="imagen" src="" alt="Imagen del Pokémon"></td>
+            <td class="altura"></td>
+            <td class="tipos"></td>
         </tr>
     </table>
-    <script type="text/javascript" src="./assets/js/codigo.js"></script>
+
+    <script type="text/javascript" src="codigo.js"></script>
+
 </body>
 </html>
