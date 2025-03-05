@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: aliceblue;
+    justify-content: center; /* Center content vertically */
+}
+
+.buscador {
+    margin: 10px 0;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid white; /* White border for better visibility */
+    background-color: transparent; /* Transparent background */
+    color: aliceblue; /* White text */
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: lightgray;
+    border: 1px solid white; /* White border for better visibility */
+}
+
+table {
+    border: solid 1px lightgrey;
+    border-collapse: collapse;
+    text-align: left; /* Align text to the left as in the image */
+    margin-top: 10px;
+    width: 300px; /* Adjust width to match image */
+    background-color: black;
+}
+
+th, td {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    text-align: left; /* Align text to the left as in the image */
+}
+
+th {
+    background-color: black; /* No background color for th */
+    color: lightgrey; /* Light grey color for th text */
+    
+}
+
+/* Add styles for the container to match the image */
+.container {
+    width: 400px; /* Adjust width to match image */
+    padding: 20px;
+    border: 1px solid white; /* White border */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container input {
+    width: 200px; /* Adjust input width */
+}
+
+.container button {
+    margin-left: 5px; /* Add some space between input and button */
+}
