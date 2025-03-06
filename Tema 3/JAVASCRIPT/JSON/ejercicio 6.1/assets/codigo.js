@@ -12,7 +12,9 @@ async function buscarPelicula(){
     const titulo = document.querySelector(".titulo");
     const anyo = document.querySelector(".anyo");
     const duracion = document.querySelector(".duracion");
-    const calificacion = document.querySelector(".calificacion");
+    const resultadoValoracion = document.querySelector("#resultadoValoracion");
+
+    
 
     try{
         const response = await fetch(url);
@@ -21,18 +23,26 @@ async function buscarPelicula(){
         titulo.innerHTML = `<h3>${data.Title}</h3>`;
         anyo.innerHTML = `<h3>${data.Year}</h3>`;
         duracion.innerHTML = `<h3>${data.Runtime}</h3>`;
+        resultadoValoracion.innerHTML = "";
 
-        calificacion.innerHTML = "";
-
-        data.Ratings.forEach((rating) => {
-            calificacion.innerHTML  += `<ul><li>${rating.Source}: ${rating.Value}</li></ul>`;
-        });
 
     }catch(error){
         titulo.innerHTML = "<p>No se encontró la película";
         anyo.innerHTML = "";
         duracion.innerHTML = "";
-        calificacion.innerHTML = "";
+        medio.innerHTML = "";
+        selectMedios.innerHTML = "";
+        resultadoValoracion.innerHTML = "";
         console.error("Error al obtener datos",error);
+    }
+
+    function mostrarValoracion() {
+        const selectMedios = document.querySelector("#selectMedios");
+        const resultadoValoracion = document.querySelector("#resultadoValoracion");
+    
+        if (selectMedios.value) {
+            resultadoValoracion.innerHTML = `<p>El medio ${selectMedios.options[selectMedios.selectedIndex].text} 
+            ha valorado la película ${nombrePelicula} con un valor de ${selectMedios.value}</p>`;
+        }
     }
 }
