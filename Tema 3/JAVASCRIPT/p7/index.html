@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Bootstrap</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="calculadora">
+        <h2 class="text-center">Calculadora Online</h2>
+        <input type="text" id="display" class="form-control mb-3 text-right" value="0" disabled>
+        <div class="contenedor">
+            <div class="row">
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="7">7</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="8">8</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="9">9</button>
+                </div>
+                <div class="col-3">
+                    <button class="operacion btn btn-primary w-100" value="/">/</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="4">4</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="5">5</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="6">6</button>
+                </div>
+                <div class="col-3">
+                    <button class="operacion btn btn-primary w-100" value="x">x</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="1">1</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="2">2</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="3">3</button>
+                </div>
+                <div class="col-3">
+                    <button class="operacion btn btn-primary w-100" value="-">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value="0">0</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton btn btn-secondary w-100" value=".">.</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-warning w-100" id="borrar">C</button>
+                </div>
+                <div class="col-3">
+                    <button class="operacion btn btn-primary w-100" value="+">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-success w-100" id="igual">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        
+
+    
+    
+
+    <script type="text/javascript" src="./assets/codigo.js"></script>
+</body>
+</html>

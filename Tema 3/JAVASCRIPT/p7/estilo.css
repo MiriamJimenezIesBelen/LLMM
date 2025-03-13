@@ -1,0 +1,26 @@
+.calculadora {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.btn {
+    width: 100px;
+    margin: 2px;
+    display: flex;
+    row-gap: 20px;
+}
+.btn-secondary { 
+    background-color: gray; color: white; 
+}
+.btn-primary { 
+    background-color: blue; color: white; 
+}
+.btn-warning { 
+    background-color: orange; color: white; 
+}
+.btn-success { 
+    background-color: green; color: white; 
+}
