@@ -2,52 +2,52 @@
 let primerOp = "";
 let segundoOp = "";
 let operacion = "";
+
 const buttons = document.querySelectorAll(".boton");
 const display = document.getElementById("display");
 const operaciones = document.querySelectorAll(".operacion");
 const igual = document.querySelector("#igual");
-const borrar = document.querySelector("#borrar")
+const borrar = document.querySelector("#borrar");
 
-buttons.forEach(boton =>{
-    boton.addEventListener("click",() => {
-    if (operacion === "") {
-        primerOP += boton.textContent;
-        display.value = primerOP;
-    } else {
-        segundoOP += boton.textContent;
-        display.value = segundoOP;
-    }
+buttons.forEach(boton => {
+    boton.addEventListener("click", () => {
+        if (operacion === "") {
+            primerOp += boton.value;
+            display.value = primerOp;
+        } else {
+            segundoOp += boton.value;
+            display.value = segundoOp;
+        }
     });
 });
 
-operaciones.forEach(boton =>{
-    boton.addEventListener("click",() =>{
-        if(segundoOp !== ""){
+operaciones.forEach(boton => {
+    boton.addEventListener("click", () => {
+        if (segundoOp !== "") {
             calcular();
         }
-        operacion = boton.textContent;
+        operacion = boton.value;
     });
 });
 
-igual.addEventListener("click",() =>{
-    if(segundoOp !== ""){
+igual.addEventListener("click", () => {
+    if (segundoOp !== "") {
         calcular();
     }
 });
 
-borrar.addEventListener("click",() =>{
+borrar.addEventListener("click", () => {
     primerOp = "";
     segundoOp = "";
     operacion = "";
     display.value = "0";
 });
 
-
-function calcular(){
+function calcular() {
     let resultado;
-    switch(operacion){
+    switch (operacion) {
         case "+":
-            resultado = parseFloat(primerOP) + parseFloat(segundoOP);
+            resultado = parseFloat(primerOp) + parseFloat(segundoOp);
             break;
         case "-":
             resultado = parseFloat(primerOp) - parseFloat(segundoOp);
@@ -56,12 +56,13 @@ function calcular(){
             resultado = parseFloat(primerOp) * parseFloat(segundoOp);
             break;
         case "/":
-            parseFloat(primerOp) / parseFloat(segundoOp);
+            resultado = parseFloat(primerOp) / parseFloat(segundoOp);
             break;
+        default:
+            return;
     }
     display.value = resultado;
-    primerOP = resultado;
-    segundoOP = "";
+    primerOp = resultado.toString();
+    segundoOp = "";
     operacion = "";
 }
-
