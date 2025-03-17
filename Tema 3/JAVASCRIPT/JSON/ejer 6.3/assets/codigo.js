@@ -2,6 +2,7 @@
 const b = document.querySelector("#btnSeleccionar");
 b.addEventListener("click",buscarPersonaje);
 
+
 async function buscarPersonaje(){
     const selectElement = document.querySelector("#selectPersonaje").value;
 
@@ -38,6 +39,6 @@ async function buscarPersonaje(){
         nombre.innerHTML = "<p>No se encontró el personaje";
         console.error("Error al obtener datos",error);
     }
-
-
 }
+
+
