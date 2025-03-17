@@ -17,7 +17,6 @@ async function buscarPelicula(){
     const selectMedios = document.querySelector("#selectMedios");
     const resultadoValoracion = document.querySelector("#resultadoValoracion");
 
-    
 
     try{
         const response = await fetch(url);
