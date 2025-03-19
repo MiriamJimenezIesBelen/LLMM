@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <h1>Consulta del dicionario de la real academia española de la lengua</h1>
+
+    <fieldset>
+        <div class="buscador">
+            <input type="text" id="palabra" placeholder="Ingrese una palabra">
+            <button id="b1" type="button">Buscar</button>
+        </div>
+    </fieldset>
+
+    <fieldset class="definiciones">
+        <p>Definición:</p>
+        <select id="selectDefinicion">
+            
+            <option value="">Selecciona una definicion</option>
+        </select>
+    </fieldset>
+
+    <p class="palabraLatin"></p>
+    <p class="definicion"></p>
+    <div class="numDefinicion"></div>
+
+    <script type="text/javascript" src="./assets/codigo.js"></script>
+</body>
+</html>
