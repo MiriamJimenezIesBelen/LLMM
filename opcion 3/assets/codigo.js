@@ -63,7 +63,7 @@ function mostrarDefiniciones(index, meaning) {
     definicion.innerHTML = "";
     const element = meaning.senses[index];
 
-    definicion.innerHTML = `<li>${element.raw}</li>`;
+    definicion.innerHTML = `<p>${element.raw}</p>`;
 }  
     
 
