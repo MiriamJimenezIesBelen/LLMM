@@ -5,7 +5,9 @@
  <!ELEMENT para (#PCDATA)>
  <!ELEMENT mensaje (#PCDATA)>
  <!ELEMENT direccion (#PCDATA)>
- <!ATTLIST mensaje tipo ID #REQUIRED>
+ <!-- <!ATTLIST mensaje tipo ID #REQUIRED> -->
+ <!--si no pone nada por defecto sale facebook -->
+ <!ATTLIST mensaje tipo (facebook|whatsaap|x) "facebook">
 ]>
 <aviso>
     <de>David</de>
