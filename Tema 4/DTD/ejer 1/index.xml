@@ -5,10 +5,11 @@
  <!ELEMENT para (#PCDATA)>
  <!ELEMENT mensaje (#PCDATA)>
  <!ELEMENT direccion (#PCDATA)>
+ <!ATTLIST mensaje tipo ID #REQUIRED>
 ]>
 <aviso>
     <de>David</de>
     <para>Rosalía</para>
-    <mensaje>Mañana nos vemos en el estudio a las 10.</mensaje>
+    <mensaje tipo="facebook">Mañana nos vemos en el estudio a las 10.</mensaje>
     <direccion>Esto es una direccion</direccion>
 </aviso>
