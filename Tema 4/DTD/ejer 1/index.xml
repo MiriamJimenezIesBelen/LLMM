@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE aviso [
- <!ELEMENT aviso (de,para,mensaje)>
+ <!ELEMENT aviso (de,para,mensaje,direccion)>
  <!ELEMENT de (#PCDATA)>
  <!ELEMENT para (#PCDATA)>
  <!ELEMENT mensaje (#PCDATA)>
+ <!ELEMENT direccion (#PCDATA)>
 ]>
 <aviso>
     <de>David</de>
     <para>Rosalía</para>
     <mensaje>Mañana nos vemos en el estudio a las 10.</mensaje>
+    <direccion>Esto es una direccion</direccion>
 </aviso>
