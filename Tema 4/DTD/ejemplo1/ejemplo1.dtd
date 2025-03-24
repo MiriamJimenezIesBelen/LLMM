@@ -1,7 +1,10 @@
 
- <!ELEMENT aviso (de,para,mensajes,direccion?)>
+ <!-- <!Element direccion? puede estar o no -->
+ <!-- <!Element para|cc+ o para o cc una o mas veces-->
+ <!ELEMENT aviso (de,(para|cc)+,mensajes,direccion?)>
  <!ELEMENT de (#PCDATA)>
  <!ELEMENT para (#PCDATA)>
+ <!ELEMENT cc (#PCDATA)>
   <!-- <!Element mensajes (mensaje+) uno o mas -->
  <!ELEMENT mensajes (mensaje+)>
  <!ELEMENT mensaje (#PCDATA)>
