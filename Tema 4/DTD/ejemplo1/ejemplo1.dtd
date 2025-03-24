@@ -1,0 +1,11 @@
+
+ <!ELEMENT aviso (de,para,mensajes,direccion?)>
+ <!ELEMENT de (#PCDATA)>
+ <!ELEMENT para (#PCDATA)>
+  <!-- <!Element mensajes (mensaje+) uno o mas -->
+ <!ELEMENT mensajes (mensaje+)>
+ <!ELEMENT mensaje (#PCDATA)>
+ <!ELEMENT direccion (#PCDATA)>
+ <!-- <!ATTLIST mensaje tipo ID #REQUIRED> -->
+ <!--si no pone nada por defecto sale facebook -->
+ <!ATTLIST mensaje tipo (facebook|whatsaap|x) "facebook">
