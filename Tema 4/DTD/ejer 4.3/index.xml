@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE restaurante [
+ <!ELEMENT restaurante (menu,recetas,clientes)>
+ <!ELEMENT menu (platos+)>
+ <!ELEMENT recetas (#PCDATA)>
+ <!ELEMENT clientes (zona+)>
+ <!ELEMENT zona (#PCDATA)>
+ <!-- <!ATTLIST mensaje tipo ID #REQUIRED> -->
+ <!--si no pone nada por defecto sale facebook -->
+ <!ATTLIST especie estado (extinto|amenazado|sin-peligro) "extinto">
+ <!ATTLIST nombre nombre-cientifico CDATA #IMPLIED>
+]>
+<restaurante>
+    <platos>
+        <plato>
+            <nombre></nombre>
+            <categoria></categoria>
+            <ingredientes></ingredientes>
+            <precio moneda=""></precio>
+        </plato>
+        <plato>
+            <nombre></nombre>
+            <categoria></categoria>
+            <ingredientes></ingredientes>
+            <precio moneda=""></precio>
+        </plato>
+    </platos>
+    <recetas>
+        <receta tipo-comensales="">
+            <nombre></nombre>
+            <ingredientes></ingredientes>
+        </receta>
+    </recetas>
+    <distribucion>
+        <zona>Costa Atlántica</zona>
+        <zona>Costa Mediterránea</zona>
+    </distribucion>
+</restaurante>
