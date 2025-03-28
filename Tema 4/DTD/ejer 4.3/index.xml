@@ -1,38 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE restaurante [
  <!ELEMENT restaurante (menu,recetas,clientes)>
- <!ELEMENT menu (platos+)>
- <!ELEMENT recetas (#PCDATA)>
- <!ELEMENT clientes (zona+)>
- <!ELEMENT zona (#PCDATA)>
- <!-- <!ATTLIST mensaje tipo ID #REQUIRED> -->
- <!--si no pone nada por defecto sale facebook -->
- <!ATTLIST especie estado (extinto|amenazado|sin-peligro) "extinto">
- <!ATTLIST nombre nombre-cientifico CDATA #IMPLIED>
+ <!ELEMENT menu (plato+)>
+ <!ELEMENT plato (nombre,categoria,ingredientes,precio)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT categoria (#PCDATA)>
+ <!ELEMENT precio (#PCDATA)>
+ <!ELEMENT ingredientes (ingrediente+)>
+ <!ATTLIST precio moneda CDATA #IMPLIED>
+ <!ELEMENT recetas (receta+)>
+ <!ELEMENT receta (nombre,ingredientes,preparacion)>
+ <!ATTLIST receta tipo-comensales (adultos|niños) "adultos">
+ <!ELEMENT preparacion (paso+)>
+ <!ELEMENT paso (#PCDATA)>
+ <!ELEMENT ingrediente (nombre)>
+ <!ATTLIST ingrediente cantidad CDATA #IMPLIED>
+ <!ELEMENT clientes (cliente+)>
+ <!ELEMENT cliente (nombre,telefono,correo,pedidos)>
+ <!ELEMENT telefono (#PCDATA)>
+ <!ELEMENT correo (#PCDATA)>
+ <!ELEMENT pedidos (fecha,platos_pedidos)>
+ <!ELEMENT fecha (#PCDATA)>
+ <!ELEMENT platos_pedidos (plato_pedido+)>
+ <!ELEMENT plato_pedido (#PCDATA)>
 ]>
 <restaurante>
-    <platos>
+    <menu>
         <plato>
-            <nombre></nombre>
-            <categoria></categoria>
-            <ingredientes></ingredientes>
-            <precio moneda=""></precio>
+            <nombre>Paella Valenciana</nombre>
+            <categoria>Arroces</categoria>
+            <ingredientes>
+                <ingrediente cantidad="500g"><nombre>Arroz</nombre></ingrediente>
+                <ingrediente cantidad="200g"><nombre>Pollo</nombre></ingrediente>
+                <ingrediente cantidad="150g"><nombre>Judía verde</nombre></ingrediente>
+            </ingredientes>
+            <precio moneda="EUR">15.00</precio>
         </plato>
         <plato>
-            <nombre></nombre>
-            <categoria></categoria>
-            <ingredientes></ingredientes>
-            <precio moneda=""></precio>
+            <nombre>Gazpacho Andaluz</nombre>
+            <categoria>Sopas Frías</categoria>
+            <ingredientes>
+                <ingrediente cantidad="500g"><nombre>Tomate</nombre></ingrediente>
+                <ingrediente cantidad="100g"><nombre>Pimiento</nombre></ingrediente>
+                <ingrediente cantidad="50g"><nombre>Ajo</nombre></ingrediente>
+            </ingredientes>
+            <precio moneda="EUR">8.00</precio>
         </plato>
-    </platos>
+    </menu>
+
     <recetas>
-        <receta tipo-comensales="">
-            <nombre></nombre>
-            <ingredientes></ingredientes>
+        <receta tipo-comensales="adultos">
+            <nombre>Paella Valenciana</nombre>
+            <ingredientes>
+                <ingrediente cantidad="500g"><nombre>Arroz</nombre></ingrediente>
+                <ingrediente cantidad="200g"><nombre>Pollo</nombre></ingrediente>
+                <ingrediente cantidad="150g"><nombre>Judía verde</nombre></ingrediente>
+            </ingredientes>
+            <preparacion>
+                <paso>Calentar aceite en una paellera y sofreír el pollo.</paso>
+                <paso>Añadir las verduras y sofreír durante 5 minutos.</paso>
+                <paso>Incorporar el arroz y el caldo, cocinar a fuego medio.</paso>
+            </preparacion>
         </receta>
     </recetas>
-    <distribucion>
-        <zona>Costa Atlántica</zona>
-        <zona>Costa Mediterránea</zona>
-    </distribucion>
+
+    <clientes>
+        <cliente>
+            <nombre>Juan Pérez</nombre>
+            <telefono>+34 612345678</telefono>
+            <correo>juan.perez@email.com</correo>
+            <pedidos>
+                <fecha>2025-03-28</fecha>
+                <platos_pedidos>
+                    <plato_pedido>Paella Valenciana</plato_pedido>
+                    <plato_pedido>Gazpacho Andaluz</plato_pedido>
+                </platos_pedidos>
+            </pedidos>
+        </cliente>
+    </clientes>
 </restaurante>
