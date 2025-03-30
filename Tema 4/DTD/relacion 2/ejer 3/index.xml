@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comunidad [
+    <!ELEMENT comunidad (vecinos*)>
+    <!ELEMENT vecinos (cod_vecino?, nombre?, apellidos?, portal?, pisoyletra?, cod_cuenta_ord?)>
+    <!ELEMENT cod_vecino (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT portal (#PCDATA)>
+    <!ELEMENT pisoyletra (#PCDATA)>
+    <!ELEMENT cod_cuenta_ord (#PCDATA)>
+
+    <!ATTLIST cod_vecino carg (presidente|vicepresidente|secretario|vocal|ninguno) #REQUIRED>
+    <!ATTLIST nombre nom CDATA #IMPLIED>
+    <!ATTLIST apellidos apel CDATA #IMPLIED>
+    <!ATTLIST portal port CDATA #IMPLIED>
+    <!ATTLIST pisoyletra piso CDATA #IMPLIED>
+    <!ATTLIST cod_cuenta_ord ccc CDATA #IMPLIED>
+]>
+
+<comunidad>
+    <vecinos>
+        <cod_vecino carg="secretario">2824A</cod_vecino>
+        <nombre nom="Alfonso">Alfonso</nombre>
+        <portal>10</portal>
+        <cod_cuenta_ord>23434</cod_cuenta_ord>
+    </vecinos>
+
+    <vecinos>
+        <cod_vecino carg="presidente">384798F</cod_vecino>
+        <nombre nom="Maria">Maria</nombre>
+        <apellidos>Ramirez Sanz</apellidos>
+        <portal>5</portal>
+        <cod_cuenta_ord>5656</cod_cuenta_ord>
+    </vecinos>
+
+    <vecinos>
+    <cod_vecino carg="ninguno">384798F</cod_vecino>
+        <nombre nom="Juan">Juan</nombre>
+        <portal>2</portal>
+        <cod_cuenta_ord>34343</cod_cuenta_ord>
+    </vecinos>
+
+    <vecinos>
+        <cod_vecino carg="vicepresidente">1234D</cod_vecino>
+        <nombre nom="Ana">Ana</nombre>
+        <portal>1</portal>
+    </vecinos>
+</comunidad>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concesionario [
+    <!ELEMENT concesionario (coches*)>
+    <!ELEMENT coches (cod_coche?, marca?, modelo+, matricula?, cv?, plazas?)>
+    <!ELEMENT cod_coche (#PCDATA)>
+    <!ELEMENT marca (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT matricula (#PCDATA)>
+    <!ELEMENT cv (#PCDATA)>
+    <!ELEMENT plazas (#PCDATA)>
+    <!ATTLIST plazas num_puertas (3|5) #REQUIRED>
+]>
+
+<concesionario>
+    <coches>
+        <cod_coche>001</cod_coche>
+        <marca>Ford</marca>
+        <modelo>Fiesta</modelo>
+        <matricula>1234ABC</matricula>
+        <cv>120</cv>
+        <plazas num_puertas="5">5</plazas>
+    </coches>
+
+    <coches>
+        <cod_coche>002</cod_coche>
+        <marca>Renault</marca>
+        <modelo>Clio</modelo>
+        <matricula>5678DEF</matricula>
+        <cv>90</cv>
+        <plazas num_puertas="3">4</plazas>
+    </coches>
+
+    <coches>
+        <modelo>Ibiza</modelo>
+        <plazas num_puertas="5">5</plazas>
+    </coches>
+
+    <coches>
+        <cod_coche>004</cod_coche>
+        <marca>Volkswagen</marca>
+        <modelo>Golf</modelo>
+        <matricula>9101GHI</matricula>
+        <plazas num_puertas="5">5</plazas>
+    </coches>
+
+    <coches>
+        <cod_coche>005</cod_coche>
+        <marca>Peugeot</marca>
+        <modelo>208</modelo>
+        <cv>100</cv>
+        <plazas num_puertas="3">4</plazas>
+    </coches>
+</concesionario>
