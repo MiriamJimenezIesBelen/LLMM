@@ -11,7 +11,7 @@
                 <xs:element name="director" type="xs:string"/>
                 <xs:element name="genero" type="xs:string"/>
                 <xs:element name="direccion" type="xs:int"/>
-                <xs:element name="disponible" type="xs:boolean"/>
+                <xs:element name="disponibleEnStreaming" type="xs:boolean"/>
             </xs:sequence>
             <xs:attribute name="id" type="xs:integer" use="required"/>
         </xs:complexType>
