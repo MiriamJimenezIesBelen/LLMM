@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <!-- Tipo simple para el atributo curso -->
+
   <xs:simpleType name="tipoCurso">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Primero"/>
@@ -9,7 +9,6 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <!-- Tipo simple para el atributo aprobado (booleano como string) -->
   <xs:simpleType name="tipoAprobado">
     <xs:restriction base="xs:string">
       <xs:enumeration value="true"/>
@@ -17,7 +16,7 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <!-- Elemento raíz -->
+
   <xs:element name="expedientes">
     <xs:complexType>
       <xs:sequence>
