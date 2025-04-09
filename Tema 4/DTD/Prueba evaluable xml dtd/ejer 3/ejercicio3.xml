@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos SYSTEM 'ejercicio3.dtd'>
+<alumnos>
+    <alumno num_alumno="A1233" altura="165" sexo="hombre">
+        <nombre>Juan</nombre>
+        <apellidos>Luque Sanz</apellidos>
+        <domicilio>Calle Juan Gorostidi</domicilio>
+        <telefonos>
+            <telefono propietario="padre">684563782 </telefono>
+            <telefono propietario="propio">664563780</telefono>
+        </telefonos>
+        <aficiones>
+            <aficion>Leer</aficion>
+        </aficiones>
+        <comentarios>
+            <comentario>Muy trabajador</comentario>
+            <comentario>Se pelea muchos con sus compañeros</comentario>
+        </comentarios>
+        <evaluaciones >
+            <evaluacion num="primera">8</evaluacion>
+        </evaluaciones>
+    </alumno>
+
+    <alumno num_alumno="A4535" >
+        <nombre>Ana</nombre>
+        <apellidos>Jiménez Ramírez</apellidos>
+        <domicilio>Calle San Rafael</domicilio>
+        <telefonos>
+            <telefono propietario="madre">645667444 </telefono>
+        </telefonos>
+        <equipo_deportivo>Baloncesto</equipo_deportivo>
+        <aficiones>
+            <aficion>Videojuegos</aficion>
+            <aficion>Piano</aficion>
+        </aficiones>
+        <evaluaciones>
+            <evaluacion num="primera">10</evaluacion>
+            <evaluacion num="segunda">7</evaluacion>
+            <evaluacion num="tercera">10</evaluacion>
+        </evaluaciones>
+    </alumno>
+</alumnos>
