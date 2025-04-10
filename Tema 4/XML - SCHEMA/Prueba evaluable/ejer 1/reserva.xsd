@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="confirmadaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="si"/>
+            <xs:enumeration value="no"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="habitacionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="individual"/>
+            <xs:enumeration value="doble"/>
+            <xs:enumeration value="suite"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="edadType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="18"/>
+            <xs:maxExclusive value="120"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    
+    <xs:element name="reservas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="reserva" minOccurs="1" maxOccurs="50">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cliente">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="apellidos" type="xs:string"/>
+                                        <xs:element name="edad" type="edadType"/>
+                                        <xs:element name="direccion" type="xs:string"/>
+                                        <xs:choice>
+                                            <xs:element name="telefono" type="xs:string"/>
+                                            <xs:element name="email" type="xs:string"/>
+                                        </xs:choice>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="habitacion">
+                                <xs:complexType mixed="true">
+                                    <xs:attribute name="tipo" type="habitacionType" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="confirmada" type="confirmadaType"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="prestadoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="edadType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="18"/>
+            <xs:maxExclusive value="120"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tituloType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z0-9\s]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nacionalidadType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="española"/>
+            <xs:enumeration value="inglesa"/>
+            <xs:enumeration value="francesa"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+ 
+    <xs:element name="biblioteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libro" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo" type="tituloType"/>
+                            <xs:element name="autor">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="edad" type="edadType"/>
+                                    </xs:all>
+                                    <xs:attribute name="nacionalidad" type="nacionalidadType"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="fechaPublicacion" type="xs:date"/>
+                        </xs:sequence>
+                        <xs:attribute name="prestado" type="prestadoType"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
