@@ -10,6 +10,7 @@
             </style> 
         </head>
         <body>
+            font-size: <xsl:value-of select="css/body/letra"/>px;
             <h2>Productos</h2>
             <ul>
                 <xsl:for-each select="productos/producto">
