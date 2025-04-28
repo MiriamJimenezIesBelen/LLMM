@@ -17,6 +17,7 @@
             </style>
         </head>
         <body>
+
             <h1>Películas desde 2010</h1>
             <table>
                 <tr>
@@ -25,8 +26,7 @@
                     <th>Año</th>
                     <th>Plataforma</th>
                 </tr>
-
-                <!-- Selección y ordenación -->
+            
                 <xsl:for-each select="cartelera/pelicula[anyo &gt;= 2010]">
                     <xsl:sort select="anyo" data-type="number" order="ascending"/>
                     <tr>
@@ -39,19 +39,20 @@
                         <td><xsl:value-of select="@plataforma"/></td>
                     </tr>
                 </xsl:for-each>
-
+            
             </table>
+            
 
             <h2>Películas anteriores a 2010</h2>
             <ol>
-                <xsl:for-each select="cartelera/pelicula">
-                    <xsl:if test="anyo &lt; 2010">
-                        <xsl:sort select="anyo" data-type="number" order="ascending"/>
-                        <li><xsl:value-of select="titulo"/></li>
-                    </xsl:if>
+                <xsl:for-each select="cartelera/pelicula[anyo &lt; 2010]">
+                    <xsl:sort select="anyo" data-type="number" order="ascending"/>
+                    <li>
+                        <xsl:value-of select="titulo"/> (<xsl:value-of select="titulo/@idioma"/>)
+                    </li>
                 </xsl:for-each>
             </ol>
-
+            
         </body>
         </html>
     </xsl:template>
