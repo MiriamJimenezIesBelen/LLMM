@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:output method="xml" indent="yes"/>
+
+  <xsl:template match="/">
+    <datos>
+      <cuentas>
+        <xsl:for-each select="listado/cuenta">
+          <cuenta dnititular="{titular/@dni}">
+            <nombre>
+              <xsl:value-of select="titular"/>
+            </nombre>
+            <saldo moneda="{saldoactual/@moneda}">
+              <xsl:value-of select="saldoactual"/>
+            </saldo>
+            <creacion>
+              <xsl:value-of select="fechacreacion"/>
+            </creacion>
+          </cuenta>
+        </xsl:for-each>
+      </cuentas>
+
+      <fondos>
+        <xsl:for-each select="listado/fondo">
+          <fondo>
+            <asociado>
+              <xsl:value-of select="cuentaasociada"/>
+            </asociado>
+            <cantidad moneda="{datos/moneda}">
+              <xsl:value-of select="datos/cantidaddepositada"/>
+            </cantidad>
+          </fondo>
+        </xsl:for-each>
+      </fondos>
+    </datos>
+  </xsl:template>
+</xsl:stylesheet>
