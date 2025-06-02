@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* Colores según peso */
+.pesado {
+  border: 2px solid orange;
+}
+
+.medio {
+  border: 2px solid red;
+}
+
+.ligero {
+  border: 2px solid green;
+}
+
+/* Estilo para nombres según moneda */
+span.euro {
+  color: green;
+  font-weight: bold;
+}
+
+span.dolar {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Lista de ciudades */
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 4px;
+}
