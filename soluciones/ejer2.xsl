@@ -31,7 +31,7 @@
                             <xsl:when test="peso/@unidad='kg' and peso >= 5">
                                 <xsl:attribute name="class">pesado</xsl:attribute>
                             </xsl:when>
-                            <xsl:when test="peso/@unidad='kg' and peso < 5 and peso > 1">
+                            <xsl:when test="peso/@unidad='kg' "><!-- and peso > 1 and peso < 5-->
                                     <xsl:attribute name="class">medio</xsl:attribute>
                                 </xsl:when>
                                 <xsl:otherwise>

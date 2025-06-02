@@ -82,7 +82,7 @@
                             </xsl:when>
                             
                             <!-- COLOR DE FILA ROJO -->
-                            <!-- --><xsl:when test="peso/@unidad='kg' and peso > 1 and peso < 5">
+                            <xsl:when test="peso/@unidad='kg' "><!-- and peso > 1 and peso < 5-->
                                     <tr class="medio">
                                         <td>
                                             <xsl:choose>
