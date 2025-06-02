@@ -6,14 +6,13 @@
         <head>
             <meta charset="UTF-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <title>Pedidos<title>
         </head>
         <body>
             <h2>Portátiles</h2>
             <table border = '1'>
             <thead>
                 <tr>
-                    <th>Peso<th>
+                    <th>Peso</th>
                     <th>RAM</th>
                     <th>Disco</th>
                     <th>Precio</th>
@@ -26,9 +25,11 @@
                         <td><xsl:value-of select="ram"/></td>
                         <td><xsl:value-of select="disco"/></td>
                         <td><xsl:value-of select="precio"/></td>
+                    </xsl:if>
                 </xsl:for-each>
-             </table>
             </tbody>
+             </table>
+            
             <h2>Tablets</h2>
             <table border = '1'>
                 <tr>
@@ -42,6 +43,7 @@
                         <td><xsl:value-of select="plataforma"/></td>
                         <td><xsl:value-of select="caracteristicas/memoria"/></td>
                         <td><xsl:value-of select="caracteristicas/bateria"/></td>
+                    </xsl:if>
                 </xsl:for-each>
             </table>
         </body>
