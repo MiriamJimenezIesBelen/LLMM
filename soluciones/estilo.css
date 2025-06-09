@@ -27,6 +27,7 @@ th {
   color: #000;
 }
 
+/* Colores según peso */
 .pesado {
   border: 2px solid orange;
 }
@@ -39,6 +40,7 @@ th {
   border: 2px solid green;
 }
 
+/* Estilo para nombres según moneda */
 span.euro {
   color: green;
   font-weight: bold;
@@ -49,6 +51,7 @@ span.dolar {
   font-weight: bold;
 }
 
+/* Lista de ciudades */
 ul {
   padding-left: 20px;
   margin: 0;
