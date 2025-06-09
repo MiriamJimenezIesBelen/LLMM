@@ -32,7 +32,6 @@
                     <tr>
                         <td>
                             <xsl:value-of select="titulo"/> 
-                            (<xsl:value-of select="titulo/@idioma"/>)
                         </td>
                         <td><xsl:value-of select="director"/></td>
                         <td><xsl:value-of select="anyo"/></td>
@@ -48,7 +47,7 @@
                 <xsl:for-each select="cartelera/pelicula[anyo &lt; 2010]">
                     <xsl:sort select="anyo" data-type="number" order="ascending"/>
                     <li>
-                        <xsl:value-of select="titulo"/> (<xsl:value-of select="titulo/@idioma"/>)
+                        <xsl:value-of select="titulo"/>
                     </li>
                 </xsl:for-each>
             </ol>
